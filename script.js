@@ -177,5 +177,5 @@ let gallery = document.querySelector(".material-icons");
         gallery.addEventListener("click", ()=>{
 
             console.log("gallery clicked");
-            location.assign("http://127.0.0.1:5500/cameraApp/gallery.html");
+            location.assign("./Gallery.html");
 })
