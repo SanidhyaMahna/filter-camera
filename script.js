@@ -44,7 +44,7 @@ navigator.mediaDevices.getUserMedia(constraints)
         //store in database
 
         if (db) {
-            let videoId = uid();
+            let videoId = uid;
             let dbTransaction = db.transaction("video", "readwrite");
             let videoStore = dbTransaction.objectStore("video");
             let videoEntry = {
@@ -84,7 +84,7 @@ captBtnCont.addEventListener("click", ()=>{
     // imageUrl.src = imageUrl;
     // document.body.append(img);
     if (db) {
-        let imageId = uid();
+        let imageId = uid;
         let dbTransaction = db.transaction("image", "readwrite");
           let imageStore = dbTransaction.objectStore("image");
           let imageEntry = {
